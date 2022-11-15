@@ -20,7 +20,7 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import BasicTable from '../BodyComponents/BasicTable';
 import BasicCard from '../BodyComponents/BasicCard';
-
+import './Sidebar.css'
 const drawerWidth = 240;
 
 const openedMixin = (theme) => ({
@@ -120,6 +120,7 @@ export default function MiniDrawer() {
           <Typography variant="h6" noWrap component="div">
             Cricbuzz
           </Typography>
+          
         </Toolbar>
       </AppBar>
       <Drawer variant="permanent" open={open}>
