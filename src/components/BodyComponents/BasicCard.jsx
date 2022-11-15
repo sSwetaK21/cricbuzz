@@ -26,7 +26,8 @@ export default function BasicCard() {
       url: 'https://cricbuzz-cricket.p.rapidapi.com/series/v1/3641',
       headers: {
         // 'X-RapidAPI-Key': 'ed63b97373mshbabac2700b8fac8p1df759jsn02e5b52c05f0',
-        'X-RapidAPI-Key': 'c262ace64dmsh279e63bdcb2dd19p1e37acjsn8095b071f5ef',
+        // 'X-RapidAPI-Key': 'c262ace64dmsh279e63bdcb2dd19p1e37acjsn8095b071f5ef',
+        'X-RapidAPI-Key': 'c262ace64dmsh279e63bdcb2dd19p1e37acjsn8095b071f5ef',  //s21
         'X-RapidAPI-Host': 'cricbuzz-cricket.p.rapidapi.com'
       }
     };
@@ -45,11 +46,11 @@ export default function BasicCard() {
 
 
   return (
-    <div>
+    <div className="cards">
       {
         card.map((item) => {
           return (
-            <div style={{ 'padding': 20 }}>
+            <div style={{ 'padding': 20 }} >
               <Card sx={{ minWidth: 275 }}>
                 <CardContent>
                   <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
@@ -64,7 +65,7 @@ export default function BasicCard() {
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button size="small">{item.matchDetailsMap.match[0].matchInfo.status}</Button>
+                  <Button size="small" variant="contained">{item.matchDetailsMap.match[0].matchInfo.status}</Button>
                 </CardActions>
               </Card>
 

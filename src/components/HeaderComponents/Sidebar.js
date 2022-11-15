@@ -19,6 +19,7 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import BasicTable from '../BodyComponents/BasicTable';
+import BasicCard from '../BodyComponents/BasicCard';
 
 const drawerWidth = 240;
 
@@ -181,6 +182,7 @@ export default function MiniDrawer() {
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
         <BasicTable />
+        <BasicCard />
       </Box>
     </Box>
   );

@@ -2,7 +2,7 @@
 .css-pwngrv-MuiPaper-root-MuiCard-root {
     background-color: rgb(30, 136, 229) !important;
     width: 250px;
-    height: 200px;
+    height: 250px;
     color: white !important;
     -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -10,4 +10,30 @@
     box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
     overflow: hidden;
     min-width: 275px;
+}
+
+.cards {
+    display: flex;
+    width: 56%;
+    flex-wrap: wrap;
+}
+
+.css-16m3jxf-MuiTypography-root {
+    color: white !important;
+}
+.css-9eg9l8-MuiTypography-root{color: white !important}
+
+.cards button{
+    color: white !important;
+
+}
+.css-1t6e9jv-MuiCardActions-root {
+    display: flex;
+    padding: 8px;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.css-e784if-MuiTypography-root {
+    font-weight: 600;
+    font-size: 18px;
 }
