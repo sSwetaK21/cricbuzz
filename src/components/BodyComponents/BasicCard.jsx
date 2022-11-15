@@ -37,7 +37,7 @@ export default function BasicCard() {
         return item.matchDetailsMap != undefined
       })
       setCard(x)
-      console.log(x);
+      // console.log(x);
     }).catch(function (error) {
       console.error(error);
     });
