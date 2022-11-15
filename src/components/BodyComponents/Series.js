@@ -8,10 +8,9 @@ export function Series() {
         method: 'GET',
         url: 'https://cricbuzz-cricket.p.rapidapi.com/series/v1/international',
         headers: {
+            // 'X-RapidAPI-Key': 'd0216ea874msh5215c9df7018dc7p12b1bfjsn5b588a368446',
             'X-RapidAPI-Key': 'c262ace64dmsh279e63bdcb2dd19p1e37acjsn8095b071f5ef',
-            // 'X-RapidAPI-Key': 'aeb419b8a7msh1777bfc0866f719p19088ejsndb227c9b9907',
             'X-RapidAPI-Host': 'cricbuzz-cricket.p.rapidapi.com'
-            
         }
     };
 
@@ -22,16 +21,16 @@ export function Series() {
         console.error(error);
     });
 
-    
+
 
     return (
         <>
             {
-                mydata.map((post,index) => {
+                mydata.map((post, index) => {
                     return (
                         <div key={index}>
                             <h1>Date: {post.date}</h1>
-                            <h1>Date: {post.series[0]}</h1>
+                            <h1>Date: {post.series[0].name}</h1>
                             {/* <h2>Series Name: { post.series.map( (el)=>{
                                 {el.name}
                             }
@@ -41,8 +40,8 @@ export function Series() {
                     )
                 }
 
-                ) 
-             } 
+                )
+            }
         </>
 
     )
