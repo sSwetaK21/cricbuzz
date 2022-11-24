@@ -49,11 +49,11 @@ export default function News() {
     <>
       <div className="container">
         <h1 className="Head">Headlines</h1>
-        {News.map((item) => {
+        {News.map((item,index) => {
          return(
-      <ABC.Provider value={{ Id, setId }}>
+      // <ABC.Provider value={{ Id, setId }}>
 
-            <div className="Wrapper">
+            <div key = {index} className="Wrapper">
                 <h2 className="Headline">{item.story.hline}</h2>
                 <p className="Intro">Introduction : {item.story.intro}</p>
                 <Link to= "/NewsDetail">
@@ -62,7 +62,7 @@ export default function News() {
 
                 
             </div>
-            </ABC.Provider>
+            // </ABC.Provider>
          )
           
         })}
