@@ -1,5 +1,4 @@
 // import logo from './logo.svg';
-import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 // import Navbar from "./components/HeaderComponents/Navbar";
@@ -9,9 +8,13 @@ import News from "./components/BodyComponents/Matches/News";
 import NewsDeatail from "./components/BodyComponents/Matches/NewsDeatail";
 import ABC from "./components/UserContext";
 
+
+import Stats from './components/BodyComponents/Stats';
+import './App.css';
 function App() {
   const [Id, setId] = useState([]);
-  return (
+
+  return(
     <div className="App">
       {/* <Navbar /> */}
       {/* <Sidebar /> */}
@@ -25,6 +28,10 @@ function App() {
       </Routes>
       </ABC.Provider>
 
+      <Sidebar />
+      {/* <Series /> */}
+      {/* <BasicCard /> */}
+      <Stats />
     </div>
   );
 }
