@@ -8,6 +8,7 @@ import "./App.css";
 import News from "./components/BodyComponents/Matches/News";
 import NewsDeatail from "./components/BodyComponents/Matches/NewsDeatail";
 import ABC from "./components/UserContext";
+import { Animation } from "./components/Component/Animation";
 
 import './App.css';
 function App() {
@@ -17,6 +18,7 @@ function App() {
       {/* <Navbar /> */}
       {/* <Sidebar /> */}
       {/* <Matches /> */}
+      <Animation/>
       <ABC.Provider value={{ Id, setId }}>
       <Routes>
         <Route path="/" element={<News />} />
