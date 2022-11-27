@@ -10,10 +10,13 @@ import NewsDeatail from "./components/BodyComponents/Matches/NewsDeatail";
 import ABC from "./components/UserContext";
 import { Animation } from "./components/Component/Animation";
 
-import './App.css';
+
+import Stats from './components/BodyComponents/Stats';
+// import './App.css';
 function App() {
   const [Id, setId] = useState([]);
-  return (
+
+  return(
     <div className="App">
       {/* <Navbar /> */}
       {/* <Sidebar /> */}
@@ -26,6 +29,10 @@ function App() {
       </Routes>
       </ABC.Provider>
 
+      <Sidebar />
+      {/* <Series /> */}
+      {/* <BasicCard /> */}
+      <Stats />
     </div>
   );
 }
